@@ -1,7 +1,7 @@
 #!/usr/bin/bash
-sudo apt update
-sudo apt install -y gnupg software-properties-common
-sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
+apt update
+apt install -y gnupg software-properties-common
+wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 # Get the codename of the current distribution
 codename=$(lsb_release -cs)
 
@@ -16,8 +16,8 @@ Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 "
 
 # Save the source list to the file
-sudo sh -c "echo '$source_list' > /etc/apt/sources.list.d/qgis.sources"
+sh -c "echo '$source_list' > /etc/apt/sources.list.d/qgis.sources"
 
-sudo apt update
+apt update
 
-sudo apt install -y qgis qgis-plugin-grass
+apt install -y qgis qgis-plugin-grass
