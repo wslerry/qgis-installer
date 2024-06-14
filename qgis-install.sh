@@ -20,4 +20,4 @@ sh -c "echo '$source_list' > /etc/apt/sources.list.d/qgis.sources"
 
 apt update
 
-apt install -y qgis qgis-plugin-grass
+apt install -y qgis qgis-plugin-grass python3-pip
