@@ -9,14 +9,14 @@ codename=$(lsb_release -cs)
 source_list="
 Types: deb deb-src
 URIs: https://qgis.org/debian
-Suites: $codename
+Suites: $(codename)
 Architectures: amd64
 Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 "
 
 # Save the source list to the file
-sh -c "echo '$source_list' > /etc/apt/sources.list.d/qgis.sources"
+sh -c "echo $(source_list) > /etc/apt/sources.list.d/qgis.sources"
 
 apt update
 
