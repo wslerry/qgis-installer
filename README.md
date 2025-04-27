@@ -10,14 +10,16 @@ Use the following command to run the script via curl, passing the version choice
 curl -sSL <URL_TO_YOUR_SCRIPT> | sudo bash -s <VERSION>
 ```
 
-Replace <URL_TO_YOUR_SCRIPT> with the actual URL and <VERSION> with a number from 1 to 5:
+Replace `<VERSION>` with a selection of number from 1-5:
 
     1: Latest Release
     2: Upcoming Release
     3: Long Term Release
     4: Upcoming Long Term Release
     5: Development Version Example:
-    
+
+*Example:*
+
 ```shell
 curl -sSL https://raw.githubusercontent.com/wslerry/qgis-installer/master/installer.sh | sudo bash -s 1
 ```
