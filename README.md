@@ -1,10 +1,6 @@
-# qgis-installer
+# QGIS installer for Debian
 
-```shell
-curl -sSL https://raw.githubusercontent.com/wslerry/qgis-installer/master/installer.sh | sudo bash
-```
-## How to Run the Updated Script
-
+## Usage
 
 ### Run with curl and Specify Version:
 
@@ -23,7 +19,7 @@ Replace <URL_TO_YOUR_SCRIPT> with the actual URL and <VERSION> with a number fro
     5: Development Version Example:
     
 ```shell
-curl -sSL https://raw.githubusercontent.com/<your-repo>/installer.sh | sudo bash -s 1
+curl -sSL https://raw.githubusercontent.com/wslerry/qgis-installer/master/installer.sh | sudo bash -s 1
 ```
 
 ### Run Locally (Interactive Mode):
